@@ -148,24 +148,50 @@ body.loaded {
     height: 450px;
     margin: 0 auto;
     /* Animasi Mantul Loop */
-    animation: floatBounce 3s ease-in-out infinite; 
+    animation: floatBounce 3s ease-in-out infinite;
+    perspective: 1000px;
 }
-
+/* === BARU: Logika Wadah Flip 3D === */
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animasi putar smooth */
+    transform-style: preserve-3d; /* Wajib untuk 3D */
+    z-index: 2; /* Tetap di atas bingkai */
+}
 .profile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    position: relative;
-    z-index: 2;
-    filter: grayscale(100%); /* Hitam putih biar artistik */
+    
+    /* UBAH dari relative ke absolute agar Foto 1 dan Foto 2 saling bertumpuk */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    
+    /* BARU: Sembunyikan bagian belakang foto saat diputar */
+    backface-visibility: hidden; 
+    
+    filter: grayscale(100%); 
     transition: filter 0.5s;
 }
 
 .photo-wrapper:hover .profile-img {
     filter: grayscale(0%); /* Jadi berwarna pas di hover */
 }
+.photo-wrapper:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+.flip-front {
+    /* Foto depan normal */
+}
 
+.flip-back {
+    /* Foto belakang harus diputar 180 derajat dari awal agar posisinya benar saat wadahnya memutar */
+    transform: rotateY(180deg); 
+}
 /* Bingkai Keren */
 .frame-accent {
     position: absolute;
@@ -380,7 +406,7 @@ body.loaded {
     }
 }
 .nav-link.active {
-    color: var(--text-color) !important; /* !important dipakai untuk menimpa bawaan Bootstrap */
+    color: var(--gold-color) !important; /* !important dipakai untuk menimpa bawaan Bootstrap */
     font-weight: bold;
 }
 /* --- CSS HALAMAN PENDIDIKAN --- */

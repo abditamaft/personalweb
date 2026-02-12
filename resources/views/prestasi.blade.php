@@ -61,8 +61,8 @@
                 <div class="ach-icon">
                     <i class="fas fa-medal"></i> </div>
                 <span class="ach-date">TAHUN 2023</span>
-                <h4 class="text-white fw-bold" style="font-family: 'Death Note Font', sans-serif; letter-spacing: 1px; font-size: 1.5rem;">JUARA 1 WEB DESIGN</h4>
-                <p class="text-secondary small">Deskripsi singkat tentang lomba web design tingkat provinsi yang pernah diikuti...</p>
+                <h4 class="text-white fw-bold" style="font-family: 'Death Note Font', sans-serif; letter-spacing: 1px; font-size: 1.5rem;">JUARA 1 1200 METER</h4>
+                <p class="text-secondary small">Deskripsi singkat tentang lomba 1200 METER tingkat kecamatan yang pernah diikuti...</p>
                 <a href="#" class="text-info text-decoration-none small">Lihat Detail &rarr;</a>
             </div>
         </div>
@@ -72,8 +72,8 @@
                 <div class="ach-icon">
                     <i class="fas fa-trophy"></i> </div>
                 <span class="ach-date">TAHUN 2022</span>
-                <h4 class="text-white fw-bold" style="font-family: 'Death Note Font', sans-serif; letter-spacing: 1px; font-size: 1.5rem;">HACKATHON NASIONAL</h4>
-                <p class="text-secondary small">Partisipasi dalam event hackathon 24 jam membangun aplikasi fintech...</p>
+                <h4 class="text-white fw-bold" style="font-family: 'Death Note Font', sans-serif; letter-spacing: 1px; font-size: 1.5rem;">CONTEST LORD</h4>
+                <p class="text-secondary small">Partisipasi dalam event di area hutan land of dawn, pertaruhan hidup dan mati...</p>
                 <a href="#" class="text-info text-decoration-none small">Lihat Detail &rarr;</a>
             </div>
         </div>
@@ -83,8 +83,8 @@
                 <div class="ach-icon">
                     <i class="fas fa-award"></i> </div>
                 <span class="ach-date">TAHUN 2021</span>
-                <h4 class="text-white fw-bold" style="font-family: 'Death Note Font', sans-serif; letter-spacing: 1px; font-size: 1.5rem;">LKS IT SOFTWARE</h4>
-                <p class="text-secondary small">Perwakilan sekolah untuk bidang IT Software Solution for Business...</p>
+                <h4 class="text-white fw-bold" style="font-family: 'Death Note Font', sans-serif; letter-spacing: 1px; font-size: 1.5rem;">THE LAST ONE IN PEAK CITY</h4>
+                <p class="text-secondary small">Bertahan hidup di rusuhnya kota peak di map bermuda...</p>
                 <a href="#" class="text-info text-decoration-none small">Lihat Detail &rarr;</a>
             </div>
         </div>

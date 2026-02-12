@@ -27,8 +27,12 @@
 
             <div class="col-lg-6 order-1 order-lg-2">
                 <div class="photo-wrapper">
-                    <img src="{{ asset('img/ldesu.jpg') }}" alt="Muhammad Fitra Abdi Tama" class="profile-img">
                     
+                    <div class="flip-inner">
+                        <img src="{{ asset('img/ldesu.jpg') }}" alt="Foto Utama" class="profile-img flip-front">
+                        
+                        <img src="{{ asset('img/foto2.jpg') }}" alt="Foto Kedua" class="profile-img flip-back">
+                    </div>
                     <div class="frame-accent"></div>
                 </div>
             </div>
