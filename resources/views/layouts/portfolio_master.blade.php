@@ -34,12 +34,16 @@
 
             <a href="{{ url('/pendidikan') }}" class="island-link {{ Request::is('pendidikan*') ? 'active' : '' }}">
                 <i class="fas fa-graduation-cap"></i> Pendidikan
+            </a>  
+
+            <a href="{{ url('/prestasi') }}" class="island-link {{ Request::is('prestasi*') ? 'active' : '' }}">
+                <i class="fas fa-trophy"></i> Prestasi
             </a>
 
             <span class="divider"></span>
 
-            <a href="{{ url('/prestasi') }}" class="island-link {{ Request::is('prestasi*') ? 'active' : '' }}">
-                <i class="fas fa-trophy"></i> Prestasi
+            <a href="{{ url('/team') }}" class="island-link {{ Request::is('team*') ? 'active' : '' }}">
+                <i class="fas fa-users"></i> Team
             </a>
 
             <span class="divider" style="height: 25px; background: rgba(255,255,255,0.3);"></span>
@@ -74,6 +78,7 @@
                 <li class="nav-item"><a class="nav-link {{ Request::is('biodata*') ? 'active' : '' }}" href="{{ url('/biodata') }}">Biodata</a></li>
                 <li class="nav-item"><a class="nav-link {{ Request::is('pendidikan*') ? 'active' : '' }}" href="{{ url('/pendidikan') }}">Pendidikan</a></li>
                 <li class="nav-item"><a class="nav-link {{ Request::is('prestasi*') ? 'active' : '' }}" href="{{ url('/prestasi') }}">Prestasi</a></li>
+                <li class="nav-item"><a class="nav-link {{ Request::is('team*') ? 'active' : '' }}" href="{{ url('/team') }}">Team</a></li>
                 
                 <li class="nav-item mt-4">
                     <button onclick="toggleMusic()" class="btn btn-outline-warning rounded-pill px-4">
@@ -87,7 +92,7 @@
     <main id="swup" class="transition-fade">
         @yield('content')
     </main>
-    
+    @include('layouts.footer')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swup@4"></script>
     <script src="{{ asset('js/portfolio.js') }}"></script>

@@ -223,3 +223,74 @@ function updateMusicButtonIcon() {
         }
     }
 }
+// --- FITUR EVIDENCE (SERTIFIKAT TEAM) ---
+
+function showEvidence(imageSrc, title) {
+    const modal = document.getElementById("evidenceModal");
+    const img = document.getElementById("evidenceImage");
+    const caption = document.getElementById("evidenceTitle");
+    
+    if(modal && img) {
+        modal.style.display = "flex"; // Munculkan modal
+        img.src = imageSrc; // Isi gambar sesuai tombol yang diklik
+        if(caption) caption.innerText = title; // Ganti judul
+        
+        document.body.style.overflow = "hidden"; // Matikan scroll body
+    }
+}
+
+function closeEvidence(event) {
+    // Fungsi ini jalan kalau tombol X diklik ATAU area hitam di luar gambar diklik
+    // event.target === modal memastikan kalau kita klik GAMBARNYA, modal tidak tertutup
+    const modal = document.getElementById("evidenceModal");
+    
+    // Cek apakah yang diklik adalah background modal (area kosong) atau tombol close
+    if (event.target === modal || event.target.classList.contains('close-evidence')) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto"; // Hidupkan scroll body lagi
+    }
+}
+/* --- FITUR CRUD (FRONT-END ONLY) --- */
+
+// 1. Modal Form Tambah/Edit
+function openFormModal(mode) {
+    const modal = document.getElementById('formModal');
+    const title = document.getElementById('formTitle');
+    
+    if(modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        
+        // Ubah judul tergantung mode
+        if(mode === 'add') {
+            title.innerText = "WRITE NEW ENTRY";
+        } else {
+            title.innerText = "EDIT ARCHIVE ENTRY";
+        }
+    }
+}
+
+function closeFormModal() {
+    const modal = document.getElementById('formModal');
+    if(modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// 2. Modal Delete
+function openDeleteModal() {
+    const modal = document.getElementById('deleteModal');
+    if(modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeDeleteModal() {
+    const modal = document.getElementById('deleteModal');
+    if(modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}

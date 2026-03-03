@@ -15,3 +15,7 @@ Route::get('/pendidikan', function () {
 Route::get('/prestasi', function () {
     return view('prestasi');
 });
+// ROUTE BARU: Halaman Team
+Route::get('/team', function () {
+    return view('team'); // Memanggil file resources/views/team.blade.php
+});
